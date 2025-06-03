@@ -102,7 +102,7 @@
     const storedUsers = JSON.parse(localStorage.getItem("toonUsers")) || {};
     if (storedUsers[username] && storedUsers[username] === password) {
       localStorage.setItem("toonblogsCurrentUser", username); // ✅ Save current user
-      window.location.href = "index.html";
+      window.location.href = "welcome.html";
     } else {
       alert("Wrong username or password!");
       document.getElementById('loginForm').style.display = 'none';
